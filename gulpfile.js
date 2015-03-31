@@ -1,10 +1,9 @@
 var gulp = require('gulp'),
-    react = require('gulp-react'),
     babel = require('gulp-babel');
  
 gulp.task('react', function () {
     return gulp.src(['src/*.js'])
-        .pipe(react())
+        .pipe(babel())
         .pipe(gulp.dest('public/javascripts'));
 });
 
